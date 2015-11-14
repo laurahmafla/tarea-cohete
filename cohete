@@ -1,0 +1,21 @@
+%el fprintf imprime valores o argumentos 
+fprintf('\t  TIEMPO \t     ALTURA\t\n');
+
+%el ciclo for empieza en cero con intervalos de 2 y va hasta 100
+for t=0:2:100
+   
+    %funcion 
+    h=60+2.13*t^2-0.0013*t^4+0.000034*t^4.751;
+    
+   % disp imprime en consola 
+   disp([t,h]);
+  
+   %linspace crea un vector que va desde 0 a 100 de 50 elementos 
+  x=linspace(0,100,50);
+  y=60+2.13*x.^2-0.0013*x.^4+0.000034*x.^4.751;
+  
+  %plot grafica 
+  plot(x,y)
+  grid on
+   
+end
